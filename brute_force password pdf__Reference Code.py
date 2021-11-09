@@ -1,5 +1,6 @@
 import PyPDF2 as pd
 filename = input('Path to the file: ')
+filename = filename.strip()
 file = open(filename,'rb')
 pdfReader = pd.PdfFileReader(file)
 
