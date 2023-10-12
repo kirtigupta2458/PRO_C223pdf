@@ -14,18 +14,7 @@ else:
     body = wordListFile.read().lower()
     words = body.split('\n')
 
-    for i in range(len(words)):
-        word = words[i]
-        print('Trying to decode passowrd by: {}'.format(word))
-        result = pdfReader.decrypt(word)
-        if result == 1:
-            print('Success! The password is: '+ word)
-            break
-
-        elif result == 0:
-            tried += 1
-            print('Passwords tried: ' + str(tried))
-            continue
+    
             
 
 
